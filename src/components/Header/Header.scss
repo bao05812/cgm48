@@ -1,0 +1,14 @@
+.header {
+    height: 120px;
+    background: url(../../assets/images/imgCGM48/bg-header-left.png) no-repeat, url(../../assets/images/imgCGM48/bg-header-right.png) no-repeat;
+    background-color: #49C5A8;
+    background-position: -2.25% 90%,100.25% 80%;
+    background-size: calc(20% + 30px),calc(10% + 30px);
+    text-align: center;
+    .logoCGM48 {
+        transform: translateY(50%);
+        a{
+            fill: white;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+$cols : 12;
+$gutter : 30px;
+@import 'media';
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    @for $i from 1 through $cols {
+        @include xs {
+            .cols-xs-#{$i} {
+                width: calc((100% / $cols) * $i);     
+                padding: calc($gutter / 2);
+            }
+        }
+    }
+
+    @for $i from 1 through $cols {
+        @include sm {
+            .cols-sm-#{$i} {
+                width: calc((100% / $cols) * $i);              
+                padding: calc($gutter / 2);
+            }
+        }
+    }
+
+    @for $i from 1 through $cols {
+        @include md {
+            .cols-md-#{$i} {
+                width: calc((100% / $cols) * $i*1.2);
+                padding: calc($gutter / 2);
+            }
+        }
+    }
+
+    @for $i from 1 through $cols {
+        @include xl {
+            .cols-xl-#{$i} {
+                width: calc((100% / $cols) * $i*1.2);
+                padding: calc($gutter / 2);
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+* {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+img {
+    display: block;
+}
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+:root{
+    --text-color: #0e9a79;
+    --text-color2: #008b99;
+}
+a{
+    text-decoration: none;
+}
