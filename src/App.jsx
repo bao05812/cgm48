@@ -4,6 +4,7 @@ import Header from './components/Header/header'
 import Member from './components/Content/Member'
 import Footer from './components/Footer/Footer'
 import Angel from './components/Members/Angel'
+
 import dataMember from './components/dataMember/dataMember'
 function App() {
   const newstage = dataMember.map( val => val.stage.toLowerCase())

@@ -13,7 +13,7 @@ const Member = () => {
                     <h1>MEMBERS</h1>
                     <div className="row">
                         {dataMember.map((val) => (
-                            <div className="cols-xl-2 cols-md-2 cols-sm-4 cols-xs-6">
+                            <div className="cols-xl-2 cols-md-2 cols-sm-6 cols-xs-6">
                                 <div className="mbInfo" key={val} >
                                     <a href={val.stage.toLowerCase()}>
                                         <img src={val.img} alt="" />
@@ -28,13 +28,13 @@ const Member = () => {
                     </div>
                     <div className="social">
                         <div className="row">
-                            <div className="cols-xl-2 cols-md-2 cols-sm-2 cols-xs-12">
+                            <div className="cols-xl-2 cols-md-2 cols-sm-12 cols-xs-12">
                                 <a href="https://www.facebook.com/cgm48official"><img src={facebook} alt="" /></a>                         
                             </div>
-                            <div className="cols-xl-2 cols-md-2 cols-sm-2 cols-xs-12">
+                            <div className="cols-xl-2 cols-md-2 cols-sm-12 cols-xs-12">
                                 <a href="https://www.youtube.com/c/CGM48official"><img src={youtube} alt="" /></a>                           
                             </div>
-                            <div className="cols-xl-2 cols-md-2 cols-sm-2 cols-xs-12">
+                            <div className="cols-xl-2 cols-md-2 cols-sm-12 cols-xs-12">
                                 <a href="https://twitter.com/cgm48official"><img src={twitter} alt="" /></a>
                             </div>
                         </div>

@@ -19,6 +19,8 @@ body {
 :root{
     --text-color: #0e9a79;
     --text-color2: #008b99;
+    --text-color-bnk: #884785;
+    --text-color-bnk2: #bb80b9;
 }
 a{
     text-decoration: none;

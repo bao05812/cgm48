@@ -57,6 +57,9 @@
             }
         }
         .social {
+            @media (max-width:768px) {
+                transform: translateX(15%);
+            }
             .row{
                 justify-content: center;
                 align-items: center;

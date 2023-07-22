@@ -1,0 +1,60 @@
+@import '../row/grid.scss';
+@import '../row/media.scss';
+
+.bnk48Content {
+    padding-top: 30px;
+    background-color: #CAE1DC;
+    .textmem{
+        font-size: 20px;
+        font-weight: 300;
+        color: var(--text-color-bnk);      
+        position: relative;
+        
+        &::after{
+            content: ' ';
+            width: 700px;
+            position: absolute;
+            top: 50%;
+            margin-left: 15px;
+            height: 1px;
+            background-color: rgb(51, 51, 51);
+        }  
+    }
+    .mbInfo{
+        position: relative;
+        overflow: hidden;
+        border: 5px solid transparent;
+        transition: .3s;
+        border-radius: 5px;
+        &:hover{
+            border: 5px solid #935190;               
+                .mb-detail {
+                    visibility: hidden;
+                }
+        }
+        img{
+            width: 100%;
+            
+            border-radius: 5px;
+        }
+        .mb-detail{
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(white,70%);
+            width: 100%;
+            text-align: center;        
+            p{
+                font-size: 16px;
+                font-weight: 500;
+                color: var(--text-color-bnk2);
+            }
+            span{
+                font-size: 14px;
+                font-weight: 300;
+                color: var(--text-color-bnk2);
+                opacity: .65;
+            }
+        }
+    }
+    
+}
