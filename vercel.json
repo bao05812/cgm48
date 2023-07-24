@@ -2,7 +2,5 @@
     "rewrites":  [
       {"source": "/(.*)", "destination": "https://cgm48official.vercel.app/"}
     ]
-    
-
   }
   
