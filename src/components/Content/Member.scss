@@ -12,14 +12,38 @@
         padding: 30px 0;
         max-width: 1250px;
         margin: 0 auto;
-        h1 {
-            color: #1c725e;
-            font-size: 1.25em;
-            font-weight: 700;
+        .selectBand{
+            display: flex;
+            justify-content: space-between;
             padding-bottom: 10px;
-            border-bottom: 2px solid white ;
-            margin-bottom: 48px;
-        }    
+                border-bottom: 2px solid white ;
+                margin-bottom: 48px;
+            h1 {
+                color: #1c725e;
+                font-size: 1.25em;
+                font-weight: 700;
+                
+            }
+            .band{
+                position: relative;
+                
+                select{
+                    // padding: 10px 30px;
+                    border-radius: 20px;
+                    text-align: center;
+                    color: #884785;
+                    font-size: 16px;
+                    font-weight: 300;
+                    &:hover{
+                        background-color: #e6e6e6;
+                    }
+                    option{
+                        padding: 0;
+                    }
+                }
+            } 
+        }
+           
         .mbInfo{
             position: relative;
             overflow: hidden;
