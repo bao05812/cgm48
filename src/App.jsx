@@ -6,8 +6,9 @@ import Footer from './components/Footer/Footer'
 import Angel from './components/Members/Angel'
 
 import dataMember from './components/dataMember/dataMember'
+import databnk48 from './components/dataMember/databnk48'
 function App() {
-  const newstage = dataMember.map( val => val.stage.toLowerCase())
+  const newstage = [...dataMember,...databnk48].map( val => val.stage.toLowerCase())
   return (
     <div>
       <Header />

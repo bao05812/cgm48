@@ -1,14 +1,6 @@
 import './Bnk48Members.scss'
 import databnk48 from '../dataMember/databnk48'
 const Bnk48Members = () => {
-    const getHref1 = window.location.href.slice(22)
-    const newStringmb1 = databnk48.filter((val)=> {
-        if(val.stage == getHref1[0].toUpperCase() + getHref1.slice(1)){
-            return{
-                val
-            }
-        }
-    })
     return (
         // <div className="bnk48Members">
         //     <div className="container">

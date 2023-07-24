@@ -1,27 +1,48 @@
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
 import "./Member.scss"
 import dataMember from "../dataMember/dataMember"
+import databnk48 from "../dataMember/databnk48"
 import facebook from "../../assets/images/imgCGM48/FACEBOOK.jpg"
 import twitter from "../../assets/images/imgCGM48/TWITTER.jpg"
 import youtube from "../../assets/images/imgCGM48/YOUTUBE.jpg"
 const Member = () => {
-
+    const cg = true
+    const getInitialState = () => {
+        const value = "CGM48";
+        return value;
+      };
+    
+      const [value, setValue] = useState(getInitialState);
+     
+      const handleChange = (e) => {
+        setValue(e.target.value);
+    
+      };
     return (
         <div className="memberPage">
             <div className="container">
                 <div className="mainContent">
-                    <h1>MEMBERS</h1>
+                    <div className="selectBand">
+                    <h1>MEMBERS</h1> 
+                    <div className='band'>
+                        <select value={value} onChange={handleChange}>
+                            <option value="CGM48">CGM48</option>
+                            <option value="BNK48">BNK48</option>                          
+                        </select>
+                    </div>
+                    </div>
                     <div className="row">
-                        {dataMember.map((val) => (
+                        {(value == "CGM48" ? [...dataMember] : [...databnk48]).map((val) => (
                             <div className="cols-xl-2 cols-md-2 cols-sm-6 cols-xs-6">
                                 <div className="mbInfo" key={val} >
-                                    <a href={val.stage.toLowerCase()}>
+                                    <Link to={val.stage.toLowerCase()}>
                                         <img src={val.img} alt="" />
                                         <div className="mb-detail">
                                             <p>{val.stage.toUpperCase()}</p>
                                             <span>{val.name.slice(0, 15).toUpperCase() + "..."}</span>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         ))}

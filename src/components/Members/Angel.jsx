@@ -1,9 +1,10 @@
 import "./angel.scss"
-
+import databnk48 from '../dataMember/databnk48'
 import dataMember from "../dataMember/dataMember"
 const Angel = () => {
-    const getHref = window.location.href.slice(22)
-    const newStringmb = dataMember.filter((val)=> {
+    let stre2 = window.location.href.indexOf("/", window.location.href.indexOf("/")+3)
+    const getHref = window.location.href.slice(stre2+1)
+    const newStringmb = [...dataMember,...databnk48].filter((val)=> {
         if(val.stage == getHref[0].toUpperCase() + getHref.slice(1)){
             return{
                 val
